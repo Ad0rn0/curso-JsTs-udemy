@@ -1,0 +1,19 @@
+var nome = prompt("Qual é o seu nome completo?")
+var quantidadeLetrasNome = nome.replace(/\s/g, '').length
+var segundaLetra = nome[1]
+var indicePrimeiraLetraO = nome.indexOf('o')
+var indiceUltimaLetraO = nome.lastIndexOf('o')
+var ultimasTresLetras = nome.slice(-3)
+var palavrasNome = nome.split(' ')
+var nomeMaiusculo = nome.toUpperCase()
+var nomeMinusculo = nome.toLowerCase()
+
+document.body.innerHTML = `O seu nome é ${nome} <br>`
+document.body.innerHTML += `O seu nome tem ${quantidadeLetrasNome} letras <br>`
+document.body.innerHTML += `A segunda letra do seu nome é: ${segundaLetra} <br>`
+document.body.innerHTML += `O primeiro índice da letra 'O' no seu nome é: ${indicePrimeiraLetraO} <br>`
+document.body.innerHTML += `O último índice da letra 'O' no seu nome é: ${indiceUltimaLetraO} <br>`
+document.body.innerHTML += `As últimas 3 letras do seu nome são: ${ultimasTresLetras} <br>`
+document.body.innerHTML += `As palavras do seu nome são: ${palavrasNome} <br>`
+document.body.innerHTML += `O nome do seu nome com letras maiúsculas: ${nomeMaiusculo} <br>`
+document.body.innerHTML += `O nome do seu nome com letras minúsculas: ${nomeMinusculo} <br>` 
