@@ -64,3 +64,15 @@ table {
 thead{
     font-weight: bold;
 }
+
+p#resultadoTrue {
+    background-color: rgba(0, 128, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p#resultadoFalse {
+    background-color: rgba(255, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+}
